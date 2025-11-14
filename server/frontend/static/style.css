@@ -3,6 +3,10 @@ img{
   align-self: center;
 }
 
+h1,h2,p{
+  font-family: 'Arial', sans-serif;
+}
+
 .card{
   border: rgb(103, 102, 105) 3px solid;
   display: flex;  
@@ -11,6 +15,22 @@ img{
   margin-right:5%;
   margin-top: 1%;
   margin-bottom: 1%;
+}
+
+.contact-section{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
+    justify-content:center;
+    padding-top:60px;
+}
+
+.contact-body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
 }
 
 .row{
