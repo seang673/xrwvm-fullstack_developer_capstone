@@ -34,12 +34,12 @@ class Migration(migrations.Migration):
                     ('JEEP', 'Jeep'), ('HATCHBACK', 'Hatchback')],
                     default='SUV', max_length=11)),
                 ('year', models.IntegerField(default=2024,
-                validators=[django.core.validators.MaxValueValidator(2024),
+                        validators=[django.core.validators.MaxValueValidator(2024),
                 django.core.validators.MinValueValidator(2015)])),
                 ('color', models.CharField(max_length=50)),
-                    ('car_make', models.ForeignKey(
+                ('car_make', models.ForeignKey(
                         on_delete=django.db.models.deletion.CASCADE,
-                to='djangoapp.carmake')),
+                        to='djangoapp.carmake')),
             ],
         ),
     ]
